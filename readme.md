@@ -1,4 +1,4 @@
-# Gradient Profile Optimization
+# HPLC Gradient Profile Optimization
 
 This directory contains the Python code used to create computer simulations of chromatographic experiments and to apply optimization algorithms to them.
 
