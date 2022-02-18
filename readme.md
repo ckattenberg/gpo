@@ -44,8 +44,6 @@ Different CRFs can be found in the _chromatographic_response_funcions.py_ file.
 
 ### Running an Optimization Algorithm
 
-In root directory, run the following commands:
-
 ##### Bayesian Optimization
 
 ```bash
@@ -67,7 +65,7 @@ The runtime and the best solution that was found and its CRF score will be print
 ##### Genetic Algorithm
 
 ```bash
-python genalgo.py iterations segments
+python ga.py iterations segments
 ```
 Replace **iterations** in the command with the number of iterations you want to algorithm to run for. Note that the total number of CRF evaluations is 10 x iterations, because the population size is 10. Replace **segments** with the number of segments you want the gradient profile to consist of.
 
