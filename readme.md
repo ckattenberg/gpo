@@ -76,7 +76,7 @@ The runtime and the best solution that was found and its CRF score will be print
 ```bash
 python random_search.py iterations segments
 ```
-Replace **iterations** in the command with the number of iterations you want to algorithm to run for. Note that the total number of CRF evaluations is 10*iterations, because the population size is 10. Replace the word 'segments' with the number of segments you want the gradient profile to consist of.
+Replace **iterations** in the command with the number of iterations you want to algorithm to run for. Note that the total number of CRF evaluations is 10 x iterations, because the population size is 10. Replace **segments** with the number of segments you want the gradient profile to consist of.
 
 The runtime and the best solution that was found and its CRF score will be printed to the terminal. The virtual chromatogram produced by the best found solution will also be plotted.
 
