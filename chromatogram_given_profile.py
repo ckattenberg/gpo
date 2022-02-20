@@ -8,7 +8,7 @@ import numpy as np
 import retention_model
 import read_data as rd
 import plot_chromatogram
-import objective_functions as of
+import chromatographic_response_funcions as of
 
 
 t_0 = globals.t_0
