@@ -3,7 +3,7 @@ import retention_model
 import read_data as rd
 import math
 import numpy as np
-import objective_functions as of
+import chromatographic_response_funcions as of
 import globals
 
 
