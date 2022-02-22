@@ -8,8 +8,10 @@ This directory contains Python code for creating computer simulations of chromat
 Use the package and environment management system  [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) to install the conda environment necessary to run the code in this directory from the gpo_environment.yml file.
 
 ```bash
-conda env create --file gpo_environment.yml
+conda env create --name envname --file gpo_environment.yml
 ```
+
+Where **envname** is the name you want to give to the environment.
 
 ## Usage
 
