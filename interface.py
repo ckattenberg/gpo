@@ -97,6 +97,7 @@ def interface_pygad(chromosome, solution_id):
     3. Calculate and return the CRF score
 
     :chromosome: Gradient profile vector in the form of a numpy array.
+    :solution_id: Solution ID required by PyGAD package.
     :return: CRF score for a chromatogram produced by the specified gradient
              profile.
 
