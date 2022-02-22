@@ -46,7 +46,7 @@ To select a different CRF for the optimization algorithms to use, specify one ma
 
 **\# Calculate CRF (Change this line to choose a different CRF)**.
 
-Different CRFs can be found in the _chromatographic_response_funcions.py_ file.
+Different CRFs can be found in the _chromatographic_response_functions.py_ file.
 
 ### Running an Optimization Algorithm
 
