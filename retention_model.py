@@ -2,6 +2,7 @@ import math
 import peak_width
 import numpy as np
 
+
 def get_k(k_0, S, phi):
     """Return retention factor k for a given phi."""
     k = k_0 * math.exp(-S * phi)
