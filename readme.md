@@ -15,6 +15,10 @@ Where **envname** is the name you want to give to the environment.
 
 ## Usage
 
+### HPLC System Parameters
+
+The HPLC system parameters can be set in _globals.py_. The following parameters should be defined: t<sub>0</sub> (dead time), t<sub>D</sub> (dwell time), N (column efficiency) and optionally (when you specify a gradient profile manually) t<sub>init</sub> (length of initial isocratic gradient segment). 
+
 ### Specifying a Sample
 
 The filepath to the sample to be separated must be specified manually in the _read_data.py_ file. The sample must be specified in a .csv file where each row represents a single compound. The first column should contain the compound's k<sub>0</sub> value and the second column should contain the compound's S value. For examples, see the './samples/' folder.
