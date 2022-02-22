@@ -17,7 +17,7 @@ Where **envname** is the name you want to give to the environment.
 
 ### HPLC System Parameters
 
-The HPLC system parameters can be set in _globals.py_. The following parameters should be defined: t<sub>0</sub> (dead time), t<sub>D</sub> (dwell time), N (column efficiency) and optionally (when you specify a gradient profile manually) t<sub>init</sub> (length of initial isocratic gradient segment). 
+The HPLC system parameters can be set in _globals.py_. The following parameters should be defined: t<sub>0</sub> (dead time), t<sub>D</sub> (dwell time) and N (column efficiency).
 
 ### Specifying a Sample
 
@@ -101,19 +101,19 @@ The runtime and the best solution that was found and its CRF score will be print
 To produce a virtual chromatogram from a manually specified gradient profile, first set the HPLC system parameters in _globals.py_. Then, use the following command to produce the chromatogram:
 
 ```bash
-python chromatogram_given_profile.py phi_list t_list
+python chromatogram_given_profile.py phi_list t_init t_list
 ```
 
-Replace **phi_list** with a list of phi values; one for each turning point in the gradient profile. Replace **t_list** with a list of t values; one for each turning point in the gradient profile.
+Replace **phi_list** with a list of phi values; one for each turning point in the gradient profile. Replace **t_list** with a list of t values (min); one for each turning point in the gradient profile. Replace **t_init** with the length in time of an initial isocratic segment (min).
 
-The following image shows an example of a virtual chromatogram of the sample of 9 herbicides for a given gradient profile. In this case, the 2-segment gradient profile was specified by **phi_values** = "[0.35, 0.4, 0.8]" and **t_values**" = "[0, 5, 10]".
+The following image shows an example of a virtual chromatogram of the sample of 9 herbicides for a given gradient profile. In this case, the 2-segment gradient profile was specified by **phi_values** = "[0.35, 0.4, 0.8]", **t_init** = "0" and **t_values**" = "[0, 5, 10]".
 
 ![image1](./images/ex_chromatogram.png)
 
 To reproduce this chromatogram, specify the sample 'samples/snyder_samples/regular_sample.csv' in the _read_data.py_ file and run the following command:
 
 ```bash
-python chromatogram_given_profile.py "[0.35, 0.4, 0.8]" "[0, 5, 10]"
+python chromatogram_given_profile.py "[0.35, 0.4, 0.8]" "0" "[0, 5, 10]"
 ```
 
 ### Generating a Sample
