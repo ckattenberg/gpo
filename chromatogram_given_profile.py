@@ -13,11 +13,10 @@ import chromatographic_response_funcions as of
 
 t_0 = globals.t_0
 t_D = globals.t_D
-t_init = globals.t_init
 N = globals.N
 
 
-def plot_chromatogram_given_gradient_profile(phi_list, t_list):
+def plot_chromatogram_given_gradient_profile(phi_list, t_init, t_list):
     """
     Plot chromatogram for a specified gradient profile.
     Please specify the sample in read_data.py
@@ -46,20 +45,22 @@ def plot_chromatogram_given_gradient_profile(phi_list, t_list):
 
 
 def main():
-    if len(sys.argv) > 3:
+    if len(sys.argv) > 4:
         print('You have specified too many arguments.')
         sys.exit()
 
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 4:
         print('Please specify the following parameters in order:')
         print("- List of phi values; 1 for each turning point. Ex.: '[0.10, 0.10, 0.11, 0.275, 0.295, 0.30]'")
+        print("- t_init value (min) (length of initial isocratic segment) Ex.: '5'")
         print("- List of t values; 1 for each turning point. Ex.: '[0, 11.7, 23.5, 36, 48, 60]'")
         sys.exit()
 
     phi_list = ast.literal_eval(sys.argv[1])
-    t_list = ast.literal_eval(sys.argv[2])
+    t_init = int(sys.argv[1])
+    t_list = ast.literal_eval(sys.argv[3])
 
-    plot_chromatogram_given_gradient_profile(phi_list, t_list)
+    plot_chromatogram_given_gradient_profile(phi_list, t_init, t_list)
 
 if __name__ == '__main__':
     main()
