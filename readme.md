@@ -123,4 +123,4 @@ To generate a sample, run the following command:
 ```bash
 python generate_sample.py bounds_k0 bounds_s sample_size filepath
 ```
-Replace **bounds_k0** with the bounds for k<sub>0</sub>. Replace **bounds_s** with the bounds for S. Replace **sample_size** with the desired sample size and replace **filepath** with the path to the file where you want to save the sample. k<sub>0</sub> and S are sampled _uniformly_ from the given bounds.
+Replace **bounds_k0** with the bounds for k<sub>0</sub>, replace **bounds_s** with the bounds for S, replace **sample_size** with the desired sample size and replace **filepath** with the path to the file where you want to save the sample. k<sub>0</sub> and S are sampled _uniformly_ from the given bounds.
