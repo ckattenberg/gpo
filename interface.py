@@ -91,7 +91,7 @@ def interface_pygad(chromosome, solution_id):
     before the CRF score can be calculated. It does this using the following
     steps:
 
-    1. Read in sample sample sample data using read_data.py
+    1. Read in sample data using read_data.py
     2. Calculate retention times and peak widths for all sample compounds
        using the chromatographic simulator as implemented in retention_model.py
     3. Calculate and return the CRF score
