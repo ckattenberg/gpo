@@ -104,7 +104,7 @@ To produce a virtual chromatogram from a manually specified gradient profile, fi
 python chromatogram_given_profile.py phi_list t_init t_list
 ```
 
-Replace **phi_list** with a list of phi values; one for each turning point in the gradient profile. Replace **t_list** with a list of t values (min); one for each turning point in the gradient profile. Replace **t_init** with the length in time of an initial isocratic segment (min).
+Replace **phi_list** with a list of phi values; one for each turning point in the gradient profile. Replace **t_init** with the length in time of an initial isocratic segment (min). Replace **t_list** with a list of t values (min); one for each turning point in the gradient profile.
 
 The following image shows an example of a virtual chromatogram of the sample of 9 herbicides for a given gradient profile. In this case, the 2-segment gradient profile was specified by **phi_values** = "[0.35, 0.4, 0.8]", **t_init** = "0" and **t_values**" = "[0, 5, 10]".
 
