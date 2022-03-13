@@ -147,7 +147,7 @@ def main():
     sub_experiments = int(sys.argv[3])
     iterations = int(sys.argv[4])
 
-    run_n_times(algorithm, number_of_segments, number_of_segments, iterations)
+    run_n_times(algorithm, number_of_segments, sub_experiments, iterations)
 
 
 if __name__ == '__main__':
